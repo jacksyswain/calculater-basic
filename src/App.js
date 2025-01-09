@@ -37,8 +37,11 @@ function App() {
     <div className="App">
       <h1>React Calculator</h1>
       <div>
-        <input className="input" placeholder=''  value={ipVal}/>
+        <input type='text' className="input" placeholder=''  value={ipVal}/>
         <br/>
+
+        <br/>
+
         <div>{fVal}</div>
         <button className="btn" onClick={getVal} value="7" >7</button>
         <button className="btn" onClick={getVal} value="8">8</button>
