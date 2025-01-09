@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from "react"
 
 function App() {
-  const [fVal,setFVal]=useState();
+  const [fVal,setFVal]=useState("");
   const [dFun,setDFun]=useState("")
   
   const[ipVal,setIpVal]=useState("");
@@ -35,11 +35,11 @@ function App() {
   
   return (
     <div className="App">
-      <h1>React Calculater</h1>
+      <h1>React Calculator</h1>
       <div>
         <input className="input" placeholder=''  value={ipVal}/>
         <br/>
-        <p>{fVal}</p>
+        <div>{fVal}</div>
         <button className="btn" onClick={getVal} value="7" >7</button>
         <button className="btn" onClick={getVal} value="8">8</button>
         <button className="btn" onClick={getVal} value="9">9</button>
